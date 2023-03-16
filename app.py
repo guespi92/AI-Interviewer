@@ -26,7 +26,7 @@ def index():
         ai_response = generate_text(conversation, is_follow_up=True)
         if not ai_response:
             if question_index < len(questions) - 1:
-                question_index += 
+                question_index += 1
                 ai_response = questions[question_index]
             else:
                 ai_response = "That's all the questions we have! Thank you for participating."
